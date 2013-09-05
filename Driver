@@ -1,0 +1,39 @@
+import java.util.*;
+public class Driver
+{
+	FoodInfo twinkie=new FoodInfo("Twinkie", 1.00, "food", "WOnderful delights of fat");
+	FoodInfo tacos= new FoodInfo ("Tacos", 1.00, "food", "Straight from Taco Bell");
+	FoodInfo apple=new FoodInfo ("Apple", 1.00, "food", "Keeps the Doctor away");
+	FoodInfo juice= new FoodInfo ("Juice", 1.00, "drink", "You really going to buy juice from a vending machine?");
+	FoodInfo water= new FoodInfo("Water", 1.00,"drink", "respectable choice");
+	FoodInfo soda=new FoodInfo ("Soda", 1.00, "drink", "diabetes shall come to you");
+
+
+	DIspencer twinkie2= new DIspencer (twinkie2.getName, twinkie2.getType, twinkie2.getFoodInformation, 5);
+	DIspencer tacos2= new DIspencer (tacos2.getName, tacos2.getType, tacos2.getFoodInformation, 5);
+	DIspencer apple2= new DIspencer (apple2.getName, apple2.getType, apple2.getFoodInformation, 5);
+	DIspencer juice2= new DIspencer (juice2.getName, juice2.getType, juice2.getFoodInformation, 5);
+	DIspencer water2= new DIspencer (water2.getName, water2.getType, water2.getFoodInformation, 5);
+	DIspencer soda2= new DIspencer (soda2.getName, soda2.getType, soda2.getFoodInformation, 5);
+
+	VendingMachine food=new VendingMachine();
+	VendingMchine drink=new VendingMachine();
+
+
+
+	food.add(twinkie2);
+	food.add(tacos2);
+	food.add(apple2);
+	drink.add(water2);
+	drink.add(soda2);
+	drink.add(juice2);
+
+	boolean machine = false;
+	//while(machine!=true)
+	//{
+		//System.out.println("The Menu is: ");
+		//1for (int i; i<food.length();i++)
+		//System.out.print(food.toStrin
+	//}
+
+}
