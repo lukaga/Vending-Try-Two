@@ -1,0 +1,48 @@
+public class FoodInfo
+{
+	private String name;
+	private double price;
+	private String info;
+	private String type;
+
+	public FoodInfo(String newName, double newPrice, String newType,String newInfo)
+	{
+		this.name= newName;
+		this.price = newPrice;
+		this.type=newType;
+		this.info=newInfo;
+	}
+	public String getType()
+	{
+		return type;
+	}
+	public String getName()
+	{
+		return name;
+	}
+	public double getPrice()
+	{
+		return price;
+	}
+	public String getInfo()
+	{
+		return info;
+	}
+	public void setInfo(String newInfo)
+	{
+		info=newInfo;
+	}
+	public void setType(String newType)
+	{
+		type=newType;
+	}
+
+	public void setPrice (Double newPrice)
+	{
+		price=newPrice;
+	}
+	public void setName(String newName)
+	{
+		name=newName;
+	}
+}
