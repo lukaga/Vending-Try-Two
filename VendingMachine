@@ -1,0 +1,51 @@
+public VendingMachine
+{
+	DIspenser[] food=new DIspenser [10];
+	int i = 5;
+	public VendingMachine()
+	{
+	}
+	public boolean checkYes (double money, int oneOrTwo)
+	{
+		if (money<food[oneOrTwo].getFoodPrice)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	public void add (DIspenser new DIspenser)
+	{
+		food[i]=newDIspenser;
+		i++;
+	}
+	public double change( double moneygiven, int oneOrTwo)
+	{
+		return moneygiven-food[oneOrTwo].getFoodPice;
+	}
+	public void DecreaseQuantity(int oneOrTwo)
+	{
+		food.quantity-=1;
+	}
+	public String printStuff(int oneOrTwo)
+	{
+		return food[oneOrTwo].toString();
+	}
+	public boolean validity (int oneOrTwo)
+	{
+		if ((oneOrTwo<0)||(oneOrTwo>5))
+		{
+			throw new validity("Wrong number Kid");
+		}
+		else
+		{
+			return true;
+		}
+	}
+	public int length()
+	{
+		return this.i;
+	}
+}
